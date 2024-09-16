@@ -44,7 +44,7 @@ function calculateRoot() {
       if (containsVariables(expression)) {
           // Если выражение содержит переменные, используем Algebrite
           let algebriteResult = Algebrite.run(`sqrt(${formattedExpression})`).toString();
-          document.getElementById("result").innerHTML = `Результат: ${algebriteResult}`;
+          document.getElementById("result").innerHTML = `${algebriteResult}`;
       } else {
           // Вычисляем значение выражения с math.js
           let parsedExpression = math.evaluate(formattedExpression);
@@ -55,7 +55,7 @@ function calculateRoot() {
           }
 
           // Извлечение корня
-          let result;
+          let result = 0;
           if (degree === 2) {
               result = math.sqrt(parsedExpression);  // Квадратный корень
           } else {
@@ -66,7 +66,7 @@ function calculateRoot() {
           result = math.format(result, { precision: precision });
 
           // Вывод результата
-          document.getElementById("result").innerHTML = `Результат: ${result}`;
+          document.getElementById("result").innerHTML = `${result}`;
       }
 
   } catch (e) {

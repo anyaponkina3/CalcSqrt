@@ -9,21 +9,26 @@
 <body>
     <div class="page-container">
         <div class="container">
-            <h1 id="title">Калькулятор корней</h1>
+            <div class="title">
+                <h1 id="title">Калькулятор корней</h1>
+            </div>
 
-            <label for="number" id="number-label">Введите выражение или число:</label>
-            <input type="text" id="number" placeholder="Например, 25">
+            <div class="body">
+                <label for="number" id="number-label">Введите выражение или число:</label>
+                <input type="text" id="number" placeholder="Например, 25">
 
-            
-            
 
-            <label for="precision" id="precision-label">Точность результата (количество знаков после запятой):</label>
-            <input type="number" id="precision" value="5">
 
-            <button id="calculate-button">Вычислить</button>
 
-            <div id="result">Результат: 1.1892</div>
-        </div>
+                <label for="precision" id="precision-label">Количество знаков после запятой:</label>
+                <input type="number" id="precision" value="5">
+
+                <div class="Buttoncalculate-button">
+                    <button id="calculate-button">Вычислить</button>
+                </div>
+
+                <div id="result">0</div>
+            </div>
 
         <!-- Кнопки для смены языка и помощи -->
         <div class="footer">
@@ -33,7 +38,7 @@
                 <option value="zh">中文</option>
                 <option value="es">Español</option>
             </select>
-            <button id="help-toggle">Помощь</button>
+            <button for="helpTitle" id="help-title">Поддержка</button>
         </div>
     </div>
 
