@@ -75,6 +75,8 @@ button {
     margin: 5px;
     background-color: #E87F21;
     min-width:140px;
+    display: flex;
+    justify-content: center;
 }
 /* Контейнер для всего контента */
 .container {
