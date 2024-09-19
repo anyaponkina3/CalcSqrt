@@ -74,10 +74,10 @@ button {
     width: 30%;
     margin: 5px;
     background-color: #E87F21;
-    min-width: 100px;
+    min-width: 90px;
     display: flex;
     justify-content: center;
-    padding: 0px 20px;
+    padding: 0px 50px;
 }
 /* Контейнер для всего контента */
 .container {
