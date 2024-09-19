@@ -116,3 +116,9 @@ button {
     background-color: #E87F21;
     border-radius: 90px;
 }
+#precision{	
+	min-width:100px;	
+}
+#number{
+	min-width:100px;
+}
